@@ -1,0 +1,290 @@
+html {
+  min-height: 100%;
+  max-height: 100%;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: #1f3246;
+}
+
+.body {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+#root {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 900px) {
+  nav {
+    display: flex;
+    background-color: #222634;
+    width: 100%;
+    height: 7%;
+  }
+
+  nav .nav {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    padding-left: 0;
+    margin: 1%;
+    width: 50%;
+  }
+
+  nav .nav, nav .user, nav .menu {
+    width: 33%;
+  }
+
+  .nav #home {
+    padding: 0;
+    display: flex;
+    width: auto;
+    margin-right: 3%;
+    margin-left: 2%;
+  }
+
+  .nav .links a {
+    color: white;
+    text-decoration: none;
+  }
+
+  nav .user {
+    height: auto;
+    margin: auto;
+    text-align: center;
+    justify-items: center;
+    color: white;
+    font-size: 150%;
+    font: Poppins;
+  }
+
+  .menu {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: right;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 1%;
+    width: 50%;
+  }
+
+  .menu .links {
+    display: flex;
+    width: 100%;
+    margin: 7%;
+    justify-content: right;
+    color: white;
+  }
+
+  .menu .links a {
+    color: white;
+    text-decoration: none;
+    font-size: 120%;
+  }
+
+  .body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+
+  .body .info, .body .stocks, .body .leader {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(194, 181, 181);
+    width: 100%;
+    height: 33%;
+    opacity: .01;
+    margin: 1%;
+  }
+}
+
+@media (min-width: 900px) {
+  nav {
+      display: flex;
+      background-color: #222634;
+      width: 100%;
+      height: 7%;
+  }
+  
+  nav .nav {
+      display: flex;
+      list-style-type: none;
+      align-items: center;
+      padding-left: 0;
+      margin: 1%;
+      width: 50%;
+  }
+  
+  .nav #leader, #calc, #lookup {
+      padding: 0;
+      display: flex;
+      width: auto;
+      margin: 3%;
+  }
+  
+  .nav #home {
+      padding: 0;
+      display: flex;
+      width: auto;
+      margin-right: 3%;
+      margin-left: 2%;
+  }
+  
+  .nav .links a {
+      color: white;
+      text-decoration: none;
+      font-size: 120%;
+  }
+  
+  nav .acct {
+      display: flex;
+      list-style-type: none;
+      align-items: center;
+      justify-content: right;
+      padding-left: 0;
+      padding-right: 0;
+      margin: 1%;
+      width: 50%;
+  }
+  
+  .acct .links {
+      display: flex;
+      width: 100%;
+      margin: 7%;
+      justify-content: right;
+  }
+  
+  .acct .links a {
+      color: white;
+      text-decoration: none;
+      font-size: 120%;
+      font-family: Roboto;
+  }
+  
+  .acct .links a i {
+      justify-content: right;
+      width: 100%;
+      height: auto;
+  }
+
+  .stocks, .info, .leader {
+      background-color: rgb(194, 181, 181);
+      width: 33%;
+      height: 100%;
+      opacity: .01;
+      margin: 1%;
+      box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  }
+
+  .body {
+    display: flex;
+    flex-direction: column;
+    height: 85%;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+  }
+
+  .welcome {
+    display: flex;
+    text-align: center;
+    color: white;
+    font-size: 100%;
+    justify-content: center;
+    font-family: Roboto;
+  }
+}
+
+@media (max-width: 650px) {
+  nav {
+    display: flex;
+    background-color: #222634;
+    width: 100%;
+    height: 7%;
+  }
+
+  nav .nav {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    padding-left: 0;
+    margin: 1%;
+    width: 50%;
+  }
+
+  nav .nav, nav .user, nav .menu {
+    width: 33%;
+  }
+
+  .nav #home {
+    padding: 0;
+    display: flex;
+    width: auto;
+    margin-right: 3%;
+    margin-left: 2%;
+  }
+
+  .nav .links a {
+    color: white;
+    text-decoration: none;
+  }
+
+  nav .user {
+    height: auto;
+    margin: auto;
+    text-align: center;
+    justify-items: center;
+    color: white;
+    font-size: 100%;
+    font: Poppins;
+  }
+
+  .menu {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: right;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 1%;
+    width: 50%;
+  }
+
+  .menu .links {
+    display: flex;
+    width: 100%;
+    margin: 7%;
+    justify-content: right;
+    color: white;
+  }
+
+  .menu .links a {
+    color: white;
+    text-decoration: none;
+    font-size: 120%;
+  }
+}

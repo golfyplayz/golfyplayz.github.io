@@ -40,8 +40,7 @@ app.get('/test/:id', (req, res) => {
     const id = req.params.id
     console.log('id:', id);
     if(id > 0 && id <= data.length) {
-        const name = data[id - 1].name;
-        res.send(name);
+        res.send(data[id - 1]);
     } else {
         res.status(404).send('Not found');
     }
